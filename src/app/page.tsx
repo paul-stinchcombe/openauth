@@ -58,7 +58,7 @@ export const config: AuthConfig = {
 	},
 	authMethods: ['email', 'wallet'],
 	socialAuth: ['google'],
-	aarc_api_key: '5ec16172-e755-485d-a5de-df4693b70315',
+	aarc_api_key: process.env.API_KEY ?? '',
 };
 
 export default function Home() {
