@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { Provider } from '@aarc-xyz/auth-widget';
-import { config } from './page';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,9 +16,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<Provider config={config}>
-				<body className={inter.className}>{children}</body>
-			</Provider>
+			<body className={inter.className}>{children}</body>
 		</html>
 	);
 }
