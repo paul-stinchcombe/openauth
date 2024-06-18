@@ -1,3 +1,5 @@
+'use client';
+
 export const Wallets = ({ props }: { props: any }) => {
 	return (
 		<div>

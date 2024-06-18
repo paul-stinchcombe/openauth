@@ -33,7 +33,7 @@ export const config: AuthConfig = {
 	callbacks: {
 		onSuccess: (data: any) => {
 			// setData(data)
-			console.log(data);
+			console.log('success: ', data);
 			// setResult()
 		},
 		onError: (data: any) => {
@@ -48,5 +48,5 @@ export const config: AuthConfig = {
 	},
 	authMethods: ['email', 'wallet'],
 	socialAuth: ['google'],
-	aarc_api_key: process.env.API_KEY ?? '',
+	aarc_api_key: process.env.NEXT_PUBLIC_API_KEY ?? '',
 };
