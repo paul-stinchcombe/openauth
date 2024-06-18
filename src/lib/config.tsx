@@ -18,6 +18,7 @@ interface AuthConfig {
 	authMethods: string[];
 	socialAuth: string[];
 	aarc_api_key: string; //Get the API Key from the Aarc dashboard
+	chainId: number;
 }
 
 export const config: AuthConfig = {
@@ -49,4 +50,5 @@ export const config: AuthConfig = {
 	authMethods: ['email', 'wallet'],
 	socialAuth: ['google'],
 	aarc_api_key: process.env.NEXT_PUBLIC_API_KEY ?? '',
+	chainId: 1,
 };
